@@ -1,9 +1,10 @@
 %include	/usr/lib/rpm/macros.php
-%define         _class          Stream
-%define         _subclass       SHM
+%define		_class		Stream
+%define		_subclass	SHM
 %define		_status		stable
 %define		_pearname	%{_class}_%{_subclass}
-Summary:	%{_pearname} - Shared Memory Stream
+
+Summary:	%{_pearname} - shared memory stream
 Summary(pl):	%{_pearname} - strumieniowy dostêp do pamiêci dzielonej
 Name:		php-pear-%{_pearname}
 Version:	1.0.0
