@@ -1,11 +1,10 @@
-# ToDo:
-# - pl summary/description
 %include	/usr/lib/rpm/macros.php
 %define         _class          Stream
 %define         _subclass       SHM
 %define		_status		stable
 %define		_pearname	%{_class}_%{_subclass}
 Summary:	%{_pearname} - Shared Memory Stream
+Summary(pl):	%{_pearname} - strumieniowy dostêp do pamiêci dzielonej
 Name:		php-pear-%{_pearname}
 Version:	1.0.0
 Release:	1
@@ -25,6 +24,13 @@ stream_register_wrapper() in order to have stream-based shared-memory
 access.
 
 This class has in PEAR status: %{_status}.
+
+%description -l pl
+Pakiet Stream_SHM udostêpnia klasê, która mo¿e byæ zarejestrowana przy
+u¿yciu stream_register_wrapper(), aby mieæ oparty na strumieniach
+dostêp do pamiêci dzielonej.
+
+Ta klasa ma w PEAR status: %{_status}.
 
 %prep
 %setup -q -c
