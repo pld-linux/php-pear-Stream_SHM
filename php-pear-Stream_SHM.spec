@@ -24,7 +24,7 @@ The Stream_SHM package provides a class that can be registered with
 stream_register_wrapper() in order to have stream-based shared-memory
 access.
 
-This class has in PEAR status: %{_status}.
+In PEAR status of this package is: %{_status}.
 
 %description -l pl
 Pakiet Stream_SHM udostêpnia klasê, która mo¿e byæ zarejestrowana przy
