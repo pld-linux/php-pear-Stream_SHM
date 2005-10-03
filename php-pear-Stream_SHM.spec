@@ -8,13 +8,14 @@ Summary:	%{_pearname} - shared memory stream
 Summary(pl):	%{_pearname} - strumieniowy dostêp do pamiêci dzielonej
 Name:		php-pear-%{_pearname}
 Version:	1.0.0
-Release:	2.1
+Release:	2.2
 License:	PHP
 Group:		Development/Languages/PHP
 # Source0-md5:	4d2c3702fdee3ee9029f0728325ff081
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
 URL:		http://pear.php.net/package/Stream_SHM/
 BuildRequires:	rpm-php-pearprov >= 4.4.2-11
+Requires:	php-common >= 3:4.3.0
 Requires:	php-pear
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
