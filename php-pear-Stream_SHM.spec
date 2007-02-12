@@ -5,7 +5,7 @@
 %define		_pearname	%{_class}_%{_subclass}
 
 Summary:	%{_pearname} - shared memory stream
-Summary(pl.UTF-8):   %{_pearname} - strumieniowy dostęp do pamięci dzielonej
+Summary(pl.UTF-8):	%{_pearname} - strumieniowy dostęp do pamięci dzielonej
 Name:		php-pear-%{_pearname}
 Version:	1.0.0
 Release:	3
