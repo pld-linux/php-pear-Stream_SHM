@@ -5,7 +5,7 @@
 %define		_pearname	%{_class}_%{_subclass}
 
 Summary:	%{_pearname} - shared memory stream
-Summary(pl):	%{_pearname} - strumieniowy dostêp do pamiêci dzielonej
+Summary(pl.UTF-8):   %{_pearname} - strumieniowy dostÄ™p do pamiÄ™ci dzielonej
 Name:		php-pear-%{_pearname}
 Version:	1.0.0
 Release:	3
@@ -29,10 +29,10 @@ access.
 
 In PEAR status of this package is: %{_status}.
 
-%description -l pl
-Pakiet Stream_SHM udostêpnia klasê, która mo¿e byæ zarejestrowana przy
-u¿yciu stream_register_wrapper(), aby mieæ oparty na strumieniach
-dostêp do pamiêci dzielonej.
+%description -l pl.UTF-8
+Pakiet Stream_SHM udostÄ™pnia klasÄ™, ktÃ³ra moÅ¼e byÄ‡ zarejestrowana przy
+uÅ¼yciu stream_register_wrapper(), aby mieÄ‡ oparty na strumieniach
+dostÄ™p do pamiÄ™ci dzielonej.
 
 Ta klasa ma w PEAR status: %{_status}.
 
