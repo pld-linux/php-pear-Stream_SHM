@@ -11,8 +11,8 @@ Version:	1.0.0
 Release:	3
 License:	PHP
 Group:		Development/Languages/PHP
-# Source0-md5:	4d2c3702fdee3ee9029f0728325ff081
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
+# Source0-md5:	4d2c3702fdee3ee9029f0728325ff081
 URL:		http://pear.php.net/package/Stream_SHM/
 BuildRequires:	php-pear-PEAR
 BuildRequires:	rpm-php-pearprov >= 4.4.2-11
