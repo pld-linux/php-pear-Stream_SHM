@@ -1,13 +1,11 @@
-%include	/usr/lib/rpm/macros.php
-%define		_class		Stream
-%define		_subclass	SHM
 %define		_status		stable
-%define		_pearname	%{_class}_%{_subclass}
+%define		_pearname	Stream_SHM
+%include	/usr/lib/rpm/macros.php
 Summary:	%{_pearname} - shared memory stream
 Summary(pl.UTF-8):	%{_pearname} - strumieniowy dostęp do pamięci dzielonej
 Name:		php-pear-%{_pearname}
 Version:	1.0.0
-Release:	5
+Release:	6
 License:	PHP
 Group:		Development/Languages/PHP
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
@@ -16,7 +14,7 @@ URL:		http://pear.php.net/package/Stream_SHM/
 BuildRequires:	php-pear-PEAR
 BuildRequires:	rpm-php-pearprov >= 4.4.2-11
 BuildRequires:	rpmbuild(macros) >= 1.300
-Requires:	php-common >= 3:4.3.0
+Requires:	php(core) >= 4.3.0
 Requires:	php-pear
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -49,6 +47,6 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc install.log
-%dir %{php_pear_dir}/%{_class}
+%dir %{php_pear_dir}/Stream
 %{php_pear_dir}/.registry/*.reg
-%{php_pear_dir}/%{_class}/*.php
+%{php_pear_dir}/Stream/*.php
