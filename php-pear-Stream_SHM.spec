@@ -1,6 +1,5 @@
 %define		_status		stable
 %define		_pearname	Stream_SHM
-%include	/usr/lib/rpm/macros.php
 Summary:	%{_pearname} - shared memory stream
 Summary(pl.UTF-8):	%{_pearname} - strumieniowy dostęp do pamięci dzielonej
 Name:		php-pear-%{_pearname}
